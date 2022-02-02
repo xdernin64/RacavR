@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">RacavR</string>
+    <string name="btn_Registrarse">Registrarse</string>
+    <string name="btnlogin">Iniciar sesion</string>
+</resources>

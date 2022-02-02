@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="299dp"
+        android:layout_height="307dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.58"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.537">
+
+        <TextView
+            android:id="@+id/txt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Usuario:" />
+
+        <EditText
+            android:id="@+id/txt_usr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60px"
+            android:background="#000000"
+            android:backgroundTint="#43A047"
+            android:clickable="false"
+            android:ems="10"
+            android:hint="usuario"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:padding="30px"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#8BE8E3E3" />
+
+        <TextView
+            android:id="@+id/lb_pwr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contraseña:" />
+
+        <EditText
+            android:id="@+id/txt_pwr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#43A047"
+            android:ems="10"
+            android:hint="contraseña"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:padding="30px"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#FFFFFF"
+            android:textColorHint="#65E6DADA"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="172dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50px"
+            android:background="#1E88E5"
+            android:backgroundTint="#039BE5"
+            android:text="@string/btnlogin"
+            app:strokeColor="#1E88E5"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:id="@+id/btn_registrarseenlace"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:onClick="cambiarlogin"
+            android:text="@string/btn_Registrarse"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="191dp"
+        android:layout_height="159dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.055">
+
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="138dp"
+            android:layout_height="53dp"
+            android:text="RACA"
+            android:textAlignment="center"
+            android:textColor="#1E88E5"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
